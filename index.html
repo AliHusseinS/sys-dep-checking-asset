@@ -1104,17 +1104,23 @@
     // -------------------------------------------------------------
     // نظام تسجيل دخول التدريسي (الهاتف + التحقق والاسم التلقائي + OTP)
     // -------------------------------------------------------------
+    function normalizePhoneKey(p) {
+      if (!p) return '';
+      const digits = p.toString().replace(/\D/g, '');
+      return digits.length >= 10 ? digits.slice(-10) : digits;
+    }
+
     function handlePhoneInputChange(phoneVal) {
-      const clean = (phoneVal || '').trim().replace(/[\s\-\+]/g, '');
+      const key = normalizePhoneKey(phoneVal);
       const faculties = getStoredFaculties();
       const nameContainer = document.getElementById('field-faculty-name-container');
       const nameInput = document.getElementById('input-faculty-name');
       const statusSpan = document.getElementById('phone-check-status');
 
-      if (clean.length >= 10) {
-        const found = faculties.find(f => f.phone.replace(/[\s\-\+]/g, '') === clean);
+      if (key.length >= 10) {
+        const found = faculties.find(f => normalizePhoneKey(f.phone) === key);
         if (found) {
-          statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مسجل: ' + found.name + '</span>';
+          statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً د. ' + found.name + '</span>';
           nameInput.value = found.name;
           nameContainer.classList.add('hidden'); // إخفاء حقل الاسم لأنه مسجل مسبقاً
         } else {
@@ -1146,7 +1152,8 @@
 
       // إذا كان الرقم مسجلاً نأخذ اسمه المخزن تلقائياً
       const faculties = getStoredFaculties();
-      const existing = faculties.find(f => f.phone.replace(/[\s\-\+]/g, '') === phone.replace(/[\s\-\+]/g, ''));
+      const key = normalizePhoneKey(phone);
+      const existing = faculties.find(f => normalizePhoneKey(f.phone) === key);
       if (existing) {
         name = existing.name;
       } else if (!name) {
@@ -2178,10 +2185,10 @@
 
     function saveOrUpdateFacultyLocal(phone, name) {
       const list = getStoredFaculties();
-      const cleanPhone = phone.replace(/[\s\-\+]/g, '');
-      const idx = list.findIndex(f => f.phone.replace(/[\s\-\+]/g, '') === cleanPhone);
+      const key = normalizePhoneKey(phone);
+      const idx = list.findIndex(f => normalizePhoneKey(f.phone) === key);
       if (idx !== -1) {
-        list[idx].name = name;
+        if (name && name.trim()) list[idx].name = name.trim();
       } else {
         list.push({ phone: phone, name: name, registeredAt: new Date().toLocaleDateString('ar-IQ') });
       }

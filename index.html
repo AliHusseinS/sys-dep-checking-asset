@@ -1991,19 +1991,27 @@
       const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
       const message = `*جامعة الكوفة — كلية التخطيط العمراني*\n*منظومة فحص رصانة البحوث العلمية*\n\nرمز التحقق الخاص بك (OTP) هو: *${otp}*\n\nصلاحية الرمز 5 دقائق. يرجى عدم مشاركته مع أي شخص.`;
 
+      const requestPayload = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          phone: formatted,
+          otp: otp,
+          apiKey: WA_API_KEY,
+          message: message
+        })
+      };
+
       try {
-        const res = await fetch(DEFAULT_WA_URL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            phone: formatted,
-            otp: otp,
-            apiKey: WA_API_KEY,
-            message: message
-          })
-        });
+        let res = await fetch(DEFAULT_WA_URL, requestPayload);
+        // إذا كان السيرفر في ثانية إعادة الاتصال ننتظر لحظة ونعيد المحاولة تلقائياً
+        if (res.status === 503) {
+          await new Promise(r => setTimeout(r, 1800));
+          res = await fetch(DEFAULT_WA_URL, requestPayload);
+        }
+
         const data = await res.json();
         if (data.success) {
           Swal.fire({

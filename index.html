@@ -1020,8 +1020,18 @@
     function loadInitialData() {
       localStorage.setItem(STORAGE_KEY_GAS_URL, DEFAULT_GAS_URL);
       localStorage.setItem(STORAGE_KEY_WA_URL, DEFAULT_WA_URL);
-      // تدريسيين افتراضيين لتسهيل الفحص الفوري
+
+      // تنظيف أي بيانات قديمة باللقب من التخزين المحلي
       let faculties = getStoredFaculties();
+      faculties = faculties.filter(f => {
+        const k = normalizePhoneKey(f.phone);
+        if (k === '7804267805' && f.name && f.name.includes('أ.م.د')) return false;
+        return true;
+      }).map(f => {
+        if (f.name) f.name = f.name.replace(/^(أ\.م\.د\.|أ\.د\.|م\.د\.|م\.|د\.)\s*/, '').trim();
+        return f;
+      });
+      saveStoredFaculties(faculties);
       if (faculties.length === 0) {
         faculties = [
           { phone: '07801234567', name: 'أحمد عبد الحسين الكعبي', registeredAt: new Date().toLocaleDateString('ar-IQ') },
@@ -1138,10 +1148,11 @@
             .then(r => r.json())
             .then(data => {
               if (data && data.registered && data.name) {
-                statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً ' + data.name + '</span>';
-                nameInput.value = data.name;
+                const cleanName = data.name.replace(/^(أ\.م\.د\.|أ\.د\.|م\.د\.|م\.|د\.)\s*/, '').trim();
+                statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً ' + cleanName + '</span>';
+                nameInput.value = cleanName;
                 nameContainer.classList.add('hidden');
-                saveOrUpdateFacultyLocal(phoneVal, data.name);
+                saveOrUpdateFacultyLocal(phoneVal, cleanName);
               } else {
                 statusSpan.innerHTML = '<span class="text-amber-400"><i class="fa-solid fa-user-plus"></i> رقم جديد (يرجى إدخال اسمك)</span>';
                 nameContainer.classList.remove('hidden');
@@ -1175,17 +1186,22 @@
         return;
       }
 
-      // إذا كان الرقم مسجلاً نأخذ اسمه المخزن تلقائياً
+      // إذا كتب المستخدم اسماً جديداً نعتمد ما كتبه ونحدث السجل فوراً
       const faculties = getStoredFaculties();
       const key = normalizePhoneKey(phone);
       const existing = faculties.find(f => normalizePhoneKey(f.phone) === key);
-      if (existing) {
-        name = existing.name;
-      } else if (!name) {
+
+      if (name && name.trim()) {
+        name = name.trim();
+        saveOrUpdateFacultyLocal(phone, name);
+        syncFacultyToGas(phone, name);
+      } else if (existing && existing.name) {
+        name = existing.name.trim();
+      } else {
         Swal.fire({
           icon: 'warning',
           title: 'يرجى كتابة الاسم الثلاثي',
-          text: 'نظراً لأنك تسجل لأول مرة، يرجى كتابة اسمك الثلاثي واللقب العلمي لحفظه مع هاتفك.',
+          text: 'نظراً لأنك تسجل لأول مرة، يرجى كتابة اسمك لحفظه مع هاتفك.',
           confirmButtonText: 'حسناً'
         });
         return;

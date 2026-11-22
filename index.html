@@ -140,10 +140,10 @@
       <!-- الأزرار العلوية وإدارة الحسابات -->
       <div class="flex items-center gap-2.5">
         
-        <!-- زر فتح إعدادات Google Sheets -->
-        <button onclick="openSettingsModal()" title="إعدادات الربط مع Google Sheets" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white text-xs font-semibold flex items-center gap-1.5 transition">
+        <!-- زر فتح إعدادات Google Sheets (مخفي ومدمج تلقائياً في الكود) -->
+        <button onclick="openSettingsModal()" title="إعدادات الربط مع Google Sheets" class="hidden">
           <i class="fa-solid fa-table-cells text-emerald-400"></i>
-          <span class="hidden md:inline">Google Sheet</span>
+          <span>Google Sheet</span>
         </button>
 
         <!-- في حال تسجيل دخول التدريسي -->
@@ -995,7 +995,7 @@
     const STORAGE_KEY_FACULTIES = 'sobriety_faculties_v2';
     const STORAGE_KEY_REQUESTS = 'sobriety_requests_v2';
     const STORAGE_KEY_GAS_URL = 'sobriety_gas_url_v2';
-    const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyRUXOU1GMs86Tnvg4RYejAxGqlLOcYtQlVCYwde6hHhtlW5eqe_fxpLE6cg9P3beDb/exec';
+    const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyjEyond2ppPKsnntf5-By2OhhRgzNC1WlA9PDB0s9HXDjgqhEqLyfNQ9yufMR5vxaB/exec';
     const STORAGE_KEY_SESSION_FACULTY = 'sobriety_session_faculty_v2';
     const STORAGE_KEY_SESSION_OFFICER = 'sobriety_session_officer_v2';
 
@@ -1018,6 +1018,7 @@
     });
 
     function loadInitialData() {
+      localStorage.setItem(STORAGE_KEY_GAS_URL, DEFAULT_GAS_URL);
       // تدريسيين افتراضيين لتسهيل الفحص الفوري
       let faculties = getStoredFaculties();
       if (faculties.length === 0) {
@@ -1110,6 +1111,8 @@
       return digits.length >= 10 ? digits.slice(-10) : digits;
     }
 
+    let phoneCheckDebounce = null;
+
     function handlePhoneInputChange(phoneVal) {
       const key = normalizePhoneKey(phoneVal);
       const faculties = getStoredFaculties();
@@ -1123,12 +1126,33 @@
           statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً د. ' + found.name + '</span>';
           nameInput.value = found.name;
           nameContainer.classList.add('hidden'); // إخفاء حقل الاسم لأنه مسجل مسبقاً
-        } else {
-          statusSpan.innerHTML = '<span class="text-amber-400"><i class="fa-solid fa-user-plus"></i> رقم جديد (يرجى إدخال اسمك)</span>';
-          nameContainer.classList.remove('hidden');
-          nameInput.value = '';
+          return;
         }
+
+        // إذا لم يكن مخزناً محلياً، نفحص سحابياً في Google Sheet مباشرة
+        statusSpan.innerHTML = '<span class="text-slate-400 text-[11px]"><i class="fa-solid fa-spinner fa-spin"></i> جاري فحص السجل...</span>';
+        if (phoneCheckDebounce) clearTimeout(phoneCheckDebounce);
+        phoneCheckDebounce = setTimeout(() => {
+          fetch(DEFAULT_GAS_URL + '?action=check_phone&phone=' + key)
+            .then(r => r.json())
+            .then(data => {
+              if (data && data.registered && data.name) {
+                statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً د. ' + data.name + '</span>';
+                nameInput.value = data.name;
+                nameContainer.classList.add('hidden');
+                saveOrUpdateFacultyLocal(phoneVal, data.name);
+              } else {
+                statusSpan.innerHTML = '<span class="text-amber-400"><i class="fa-solid fa-user-plus"></i> رقم جديد (يرجى إدخال اسمك)</span>';
+                nameContainer.classList.remove('hidden');
+              }
+            })
+            .catch(() => {
+              statusSpan.innerHTML = '<span class="text-amber-400"><i class="fa-solid fa-user-plus"></i> رقم جديد (يرجى إدخال اسمك)</span>';
+              nameContainer.classList.remove('hidden');
+            });
+        }, 300);
       } else {
+        if (phoneCheckDebounce) clearTimeout(phoneCheckDebounce);
         statusSpan.innerHTML = '';
         nameContainer.classList.remove('hidden');
       }

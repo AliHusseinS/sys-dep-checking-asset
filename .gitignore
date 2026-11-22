@@ -1,0 +1,7 @@
+# Backup files and archives
+*_backup*
+*.zip
+logo_base64.txt
+__pycache__/
+*.pyc
+.system_generated/

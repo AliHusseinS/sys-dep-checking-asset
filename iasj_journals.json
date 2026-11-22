@@ -1,0 +1,2026 @@
+[
+  {
+    "id": "202",
+    "text": "Academic Science Journal - Diyala University"
+  },
+  {
+    "id": "291",
+    "text": "ACCOUNTING AND FINANCIAL SCIENCES JOURNAL - Ministry Of Finance"
+  },
+  {
+    "id": "471",
+    "text": "Adab AL Rafidayn - Mosul University"
+  },
+  {
+    "id": "162",
+    "text": "ADAB AL-BASRAH - Basrah University"
+  },
+  {
+    "id": "410",
+    "text": "Ahl Al-Bait Jurnal - University of Ahl Al-Bait"
+  },
+  {
+    "id": "411",
+    "text": "Ahl al-Bayt Medical University Journal - University of Ahl Al-Bait"
+  },
+  {
+    "id": "374",
+    "text": "AL ARBA'IN - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "430",
+    "text": "AL Ghary Journal of Economic and Administrative Sciences - University of Kufa"
+  },
+  {
+    "id": "462",
+    "text": "Al Kut Journal of Economics and Administrative Sciences - Wassit University"
+  },
+  {
+    "id": "485",
+    "text": "Al Malweah for Archaeological and Historical studies - University of Samarra"
+  },
+  {
+    "id": "335",
+    "text": "Al Mustansiriyah Journal of Pharmaceutical Sciences - Mustansiriyah University"
+  },
+  {
+    "id": "512",
+    "text": "Al Mustaqbal Journal for Law Studies - Al-Mustaqbal University"
+  },
+  {
+    "id": "482",
+    "text": "Al- Anbar Medical Journal - University of Anbar"
+  },
+  {
+    "id": "153",
+    "text": "AL- Mouhaqiq Al-Hilly Journal for legal and political science - Babylon University"
+  },
+  {
+    "id": "35",
+    "text": "Al-Academy - Baghdad University"
+  },
+  {
+    "id": "50",
+    "text": "AL-ADAB JOURNAL - Baghdad University"
+  },
+  {
+    "id": "83",
+    "text": "AL-AMEED JOURNAL - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "412",
+    "text": "Al-Ameed Journal for Medical Research and Health Sciences - University of Al-Ameed"
+  },
+  {
+    "id": "555",
+    "text": "Al-Amin Journal for Humanities - Al-Ameen University"
+  },
+  {
+    "id": "424",
+    "text": "Al-Anbar Journal of Veterinary Sciences - University of Fallujah"
+  },
+  {
+    "id": "416",
+    "text": "AL-Anbar University journal of Economic and Administration Sciences - University of Anbar"
+  },
+  {
+    "id": "419",
+    "text": "AL-ANBAR University Journal of Law and Political Sciences - University of Anbar"
+  },
+  {
+    "id": "81",
+    "text": "Al-Bahir Journal for Engineering and Pure Sciences - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "261",
+    "text": "Al-Bahith Journal - Kerbala University"
+  },
+  {
+    "id": "90",
+    "text": "Al-Bayan Journal for Medical and Health Sciences - AL-BAYAN UNIVERSITY"
+  },
+  {
+    "id": "371",
+    "text": "Al-Daleel - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "94",
+    "text": "Al-Esraa university college journal for Engineering Sciences - Al-esraa university"
+  },
+  {
+    "id": "93",
+    "text": "Al-Esraa university college journal for medical sciences - Al-esraa university"
+  },
+  {
+    "id": "92",
+    "text": "Al-Esraa university college journal for social and humanity sciences - Al-esraa university"
+  },
+  {
+    "id": "97",
+    "text": "Al-Farabi Journal of Engineering Sciences - Al-Farabi University College"
+  },
+  {
+    "id": "204",
+    "text": "Al-Fatih journal - Diyala University"
+  },
+  {
+    "id": "98",
+    "text": "Al-Furat Journal of Innovations in Electronics and Computer Engineering - Al-Furat Al-Awsat Technical University"
+  },
+  {
+    "id": "582",
+    "text": "Al-Furat Journal of Innovations in Management Sciences - Al-Furat Al-Awsat Technical University"
+  },
+  {
+    "id": "577",
+    "text": "Al-Hamdaniya Journal for Humanities - University of Al-Hamdaniya"
+  },
+  {
+    "id": "328",
+    "text": "Al-Hiqouq - Mustansiriyah University"
+  },
+  {
+    "id": "246",
+    "text": "Al-Iraqia Journal for Scientific Engineering Research - Iraqia University"
+  },
+  {
+    "id": "562",
+    "text": "Al-Iraqia Medical College Journal - Iraqia University"
+  },
+  {
+    "id": "253",
+    "text": "Al-iraqia University The college of law and political science journal - Iraqia University"
+  },
+  {
+    "id": "56",
+    "text": "Al-Khwarizmi Engineering Journal - Baghdad University"
+  },
+  {
+    "id": "69",
+    "text": "Al-Kindy College Medical Journal - Baghdad University"
+  },
+  {
+    "id": "102",
+    "text": "Al-Kitab Journal for Human Sciences - Al-kitab university"
+  },
+  {
+    "id": "103",
+    "text": "Al-Kitab Journal for Pure Sciences - Al-kitab university"
+  },
+  {
+    "id": "443",
+    "text": "Al-Kufa University Journal for Biology - University of Kufa"
+  },
+  {
+    "id": "104",
+    "text": "Al-Kunooze Scientific Journal - Alkunooze university college"
+  },
+  {
+    "id": "281",
+    "text": "Al-Kut University College Journal - kut university college"
+  },
+  {
+    "id": "100",
+    "text": "Al-Madarat Scientific Journal for Humanities and Social Sciences - Al-Idrisi University College"
+  },
+  {
+    "id": "107",
+    "text": "AL-MANSOUR JOURNAL - Al-Mansour University College"
+  },
+  {
+    "id": "286",
+    "text": "AL-Mawrid Journal - Ministry of Culture,Tourism and Antiquities"
+  },
+  {
+    "id": "88",
+    "text": "AL-MA’HAD - AL-Alamain institute for higher education"
+  },
+  {
+    "id": "377",
+    "text": "Al-Missbah journal - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "324",
+    "text": "AL-Mostansiriyah journal for arabic and international studies - Mustansiriyah University"
+  },
+  {
+    "id": "372",
+    "text": "AL-MUBEEN - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "376",
+    "text": "Al-Muhaqqiq Journal - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "337",
+    "text": "Al-Mustansiriyah Journal of Science - Mustansiriyah University"
+  },
+  {
+    "id": "110",
+    "text": "Al-Mustaqbal Journal of Pharmaceuticals and Medical Sciences - Al-Mustaqbal University"
+  },
+  {
+    "id": "109",
+    "text": "Al-Mustaqbal Journal of Sustainability in Engineering Sciences - Al-Mustaqbal University"
+  },
+  {
+    "id": "112",
+    "text": "Al-Muthanna Journal of Sport education Sciences - Al-Muthanna University"
+  },
+  {
+    "id": "125",
+    "text": "Al-Nahrain Journal for Engineering Sciences - Al-Nahrain University"
+  },
+  {
+    "id": "124",
+    "text": "Al-Nahrain Journal of Science - Al-Nahrain University"
+  },
+  {
+    "id": "129",
+    "text": "Al-Nisour Journal for Medical Sciences - Al-Nisour University College"
+  },
+  {
+    "id": "520",
+    "text": "Al-Noor Journal for Digital Media Studies - Al-Noor University"
+  },
+  {
+    "id": "130",
+    "text": "Al-Noor Journal for Humanities - Al-Noor University"
+  },
+  {
+    "id": "542",
+    "text": "Al-Noor Journal for Information Technology and Cybersecurity - Al-Noor University"
+  },
+  {
+    "id": "564",
+    "text": "Al-Noor journal of Engineering Management and Computer Science - iraqi society for Engineering management"
+  },
+  {
+    "id": "143",
+    "text": "AL-Qadisiya Journal - Al-Qadisiyah University"
+  },
+  {
+    "id": "142",
+    "text": "Al-Qadisiyah Arts Magazine - Al-Qadisiyah University"
+  },
+  {
+    "id": "138",
+    "text": "AL-Qadisiyah Journal For Administrative and Economic sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "139",
+    "text": "Al-Qadisiyah Journal For Agriculture Sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "141",
+    "text": "Al-Qadisiyah Journal for Engineering Sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "132",
+    "text": "Al-Qadisiyah Journal For Humanities Sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "140",
+    "text": "Al-Qadisiyah Journal of Pure Science - Al-Qadisiyah University"
+  },
+  {
+    "id": "137",
+    "text": "Al-Qadisiyah Journal of Veterinary Medicine Sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "133",
+    "text": "Al-Qadisiyah Medical Journal - Al-Qadisiyah University"
+  },
+  {
+    "id": "308",
+    "text": "Al-Rafidain Dental Journal - Mosul University"
+  },
+  {
+    "id": "318",
+    "text": "AL-Rafidain Engineering Journal (AREJ) - Mosul University"
+  },
+  {
+    "id": "311",
+    "text": "Al-Rafidain Journal For Sport Sciences - Mosul University"
+  },
+  {
+    "id": "309",
+    "text": "AL-Rafidain Journal of Computer Sciences and Mathematics - Mosul University"
+  },
+  {
+    "id": "352",
+    "text": "Al-Rafidain Journal of Engineering Sciences - Rafidain University College"
+  },
+  {
+    "id": "351",
+    "text": "Al-Rafidain Journal of Medical Sciences - Rafidain University College"
+  },
+  {
+    "id": "533",
+    "text": "Al-Rafidain Journal of Political Science - Mosul University"
+  },
+  {
+    "id": "353",
+    "text": "Al-Rafidain University College For Sciences - Rafidain University College"
+  },
+  {
+    "id": "76",
+    "text": "Al-Salam Journal for Engineering and Technology - Al Salam University"
+  },
+  {
+    "id": "75",
+    "text": "Al-Salam Journal for Medical Science - Al Salam University"
+  },
+  {
+    "id": "359",
+    "text": "AL-Sharaa journal for legal and administrative studies - Sharia Center for Legal and Administrative Skills Development"
+  },
+  {
+    "id": "523",
+    "text": "Al-Shatrah Veterinary and Biological Sciences Journal - Shatrah University"
+  },
+  {
+    "id": "375",
+    "text": "AL-SSEBT JOURNAL - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "516",
+    "text": "Al-Tuff Journal for Human and Social Sciences - Altuff University College"
+  },
+  {
+    "id": "587",
+    "text": "Al-Turath Journal for Biology - al-turath university"
+  },
+  {
+    "id": "573",
+    "text": "al-turath Medical Journal - al-turath university"
+  },
+  {
+    "id": "197",
+    "text": "AL-Yarmouk Journal - College Yarmouk University"
+  },
+  {
+    "id": "77",
+    "text": "Al-Zahraa Journal for Health and Medical Sciences - Ministry of Construction, Housing and Public Municipalities"
+  },
+  {
+    "id": "135",
+    "text": "Al.Qadisiyah journal for the Sciences of Physical Education - Al-Qadisiyah University"
+  },
+  {
+    "id": "32",
+    "text": "ALBAHITH ALALAMI - Baghdad University"
+  },
+  {
+    "id": "91",
+    "text": "Albayan University Journal for Legal Studies and Research - AL-BAYAN UNIVERSITY"
+  },
+  {
+    "id": "82",
+    "text": "Aldhikr journal - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "79",
+    "text": "Aljanoob Heritage - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "220",
+    "text": "Alkadhim Journal for Computer Science - Imam Al-Kadhum College"
+  },
+  {
+    "id": "221",
+    "text": "Alkadhum Journal of Science - Imam Al-Kadhum College"
+  },
+  {
+    "id": "108",
+    "text": "ALMUSTAFA ENGINEERING JOURNAL - Al-Mustafa University College"
+  },
+  {
+    "id": "131",
+    "text": "Alnoor Journal for Legal Studies - Al-Noor University"
+  },
+  {
+    "id": "310",
+    "text": "alrafidain of Law - Mosul University"
+  },
+  {
+    "id": "148",
+    "text": "Altoosi University College Journal - Ash-sheikh at-tousi university college"
+  },
+  {
+    "id": "574",
+    "text": "alturath Nursing Journal - al-turath university"
+  },
+  {
+    "id": "52",
+    "text": "Alustath Journal for Human and Social Sciences - Baghdad University"
+  },
+  {
+    "id": "483",
+    "text": "ANBAR JOURNAL OF AGRICULTURAL SCIENCES - University of Anbar"
+  },
+  {
+    "id": "484",
+    "text": "Anbar Journal of Engineering Sciences - University of Anbar"
+  },
+  {
+    "id": "415",
+    "text": "Anbar University Journal of Islamic Sciences - University of Anbar"
+  },
+  {
+    "id": "315",
+    "text": "Annals of the College of Medicine Mosul - Mosul University"
+  },
+  {
+    "id": "54",
+    "text": "Arab Scientific Heritage Journal - Baghdad University"
+  },
+  {
+    "id": "513",
+    "text": "Ashur Journal for Legal and Political Studies - Iraqi Association for Legal Sciences"
+  },
+  {
+    "id": "304",
+    "text": "Athar al-rafedain - Mosul University"
+  },
+  {
+    "id": "567",
+    "text": "AUIQ Humanities and Social Sciences - Alayen Iraqi University"
+  },
+  {
+    "id": "530",
+    "text": "AUIQ Technical Engineering Science - Alayen Iraqi University"
+  },
+  {
+    "id": "126",
+    "text": "Baghdad Journal of Biochemistry and Applied Biological Sciences - Al-Nahrain University"
+  },
+  {
+    "id": "64",
+    "text": "Baghdad Science Journal - Baghdad University"
+  },
+  {
+    "id": "158",
+    "text": "Basic Education College Magazine For Educational and Humanities Sciences - Babylon University"
+  },
+  {
+    "id": "181",
+    "text": "Basra studies journal - Basrah University"
+  },
+  {
+    "id": "184",
+    "text": "Basrah Arts Journal - Basrah University"
+  },
+  {
+    "id": "78",
+    "text": "BASRAH HERITAGE - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "164",
+    "text": "Basrah Journal For Date Palm Research - Basrah University"
+  },
+  {
+    "id": "178",
+    "text": "Basrah Journal for Engineering Sciences - Basrah University"
+  },
+  {
+    "id": "177",
+    "text": "Basrah Journal of Agricultural Sciences - Basrah University"
+  },
+  {
+    "id": "176",
+    "text": "Basrah Journal of Science - Basrah University"
+  },
+  {
+    "id": "174",
+    "text": "Basrah Journal of Surgery - Basrah University"
+  },
+  {
+    "id": "175",
+    "text": "Basrah Journal of Veterinary Research - Basrah University"
+  },
+  {
+    "id": "196",
+    "text": "Bilad Alrafidain Journal for Engineering Science and Technology (BAJEST) - Bilad Al Rafidain University College"
+  },
+  {
+    "id": "195",
+    "text": "Bilad Alrafidain Journal of Humanities and Social Science - Bilad Al Rafidain University College"
+  },
+  {
+    "id": "541",
+    "text": "Bio Med Vision Journal - Al-Noor University"
+  },
+  {
+    "id": "72",
+    "text": "Bulletin of the Iraq Natural History Museum - Baghdad University"
+  },
+  {
+    "id": "305",
+    "text": "College Of Basic Education Researches Journal - Mosul University"
+  },
+  {
+    "id": "252",
+    "text": "College of Education for Women Journal - Iraqia University"
+  },
+  {
+    "id": "494",
+    "text": "Complementary Biological System Journal - Alayen Iraqi University"
+  },
+  {
+    "id": "258",
+    "text": "Contemporary Islamic Studies Magazine - Kerbala University"
+  },
+  {
+    "id": "529",
+    "text": "Council of State Journal - Council of State"
+  },
+  {
+    "id": "217",
+    "text": "Damo Journal of Sports Sciences - Hilla University College"
+  },
+  {
+    "id": "198",
+    "text": "Defense University Journal - Defense University"
+  },
+  {
+    "id": "212",
+    "text": "Dijlah Journal - Dijlah University College"
+  },
+  {
+    "id": "514",
+    "text": "Dijlah Journal of Agricultural Sciences - Wassit University"
+  },
+  {
+    "id": "524",
+    "text": "Dijlah Journal of Engineering Sciences - Dijlah University College"
+  },
+  {
+    "id": "551",
+    "text": "Dijlah Journal of Humanities - Dijlah University College"
+  },
+  {
+    "id": "527",
+    "text": "Dijlah Journal of Medical Sciences - Dijlah University College"
+  },
+  {
+    "id": "302",
+    "text": "Dirasat Mosiliya - Mosul University"
+  },
+  {
+    "id": "381",
+    "text": "DIRASAT TARBAWIYA - The Ministry of Education"
+  },
+  {
+    "id": "209",
+    "text": "Diyala Agricultural Sciences Journal - Diyala University"
+  },
+  {
+    "id": "208",
+    "text": "Diyala Journal for Veterinary Sciences - Diyala University"
+  },
+  {
+    "id": "210",
+    "text": "DIYALA JOURNAL OF ENGINEERING SCIENCES - Diyala University"
+  },
+  {
+    "id": "206",
+    "text": "Diyala Journal of Human Research - Diyala University"
+  },
+  {
+    "id": "205",
+    "text": "Diyala Journal of Medicine - Diyala University"
+  },
+  {
+    "id": "421",
+    "text": "Duhok Medical Journal - University of Dohuk"
+  },
+  {
+    "id": "532",
+    "text": "Durar journal of Islamic studies - Diyala University"
+  },
+  {
+    "id": "165",
+    "text": "Economic Sciences - Basrah University"
+  },
+  {
+    "id": "190",
+    "text": "Economic Studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "248",
+    "text": "ECONOMICS AND ADMINISTRATIVE STUDIES JOURNAL (EASJ) (formerly AL-DANANEER JOURNAL) - Iraqia University"
+  },
+  {
+    "id": "531",
+    "text": "Electrical Engineering Technical Journal - Middle Technical University"
+  },
+  {
+    "id": "451",
+    "text": "Engineering and Technology Journal - University of Technology"
+  },
+  {
+    "id": "123",
+    "text": "ENTERPRENEURSHIP JOURNAL FOR FINANCE AND BUSINESS - Al-Nahrain University"
+  },
+  {
+    "id": "147",
+    "text": "Euphrates Journal of Agricultural Science - Al-qasim green University"
+  },
+  {
+    "id": "460",
+    "text": "Fine Arts - Wassit University"
+  },
+  {
+    "id": "317",
+    "text": "Fnon Al-Rafidayn Journal - Mosul University"
+  },
+  {
+    "id": "571",
+    "text": "Growth Leadership Journal - Imam Al-Kadhum College"
+  },
+  {
+    "id": "163",
+    "text": "Gulf Economist - Basrah University"
+  },
+  {
+    "id": "490",
+    "text": "Hadee Al Thaqalain Journal - Shiite Endowment"
+  },
+  {
+    "id": "214",
+    "text": "Hammurabi journal for studies - Hammurabi Center for researches and strategic studies"
+  },
+  {
+    "id": "578",
+    "text": "Hammurabi Journal of Medical Sciences - Babylon University"
+  },
+  {
+    "id": "341",
+    "text": "Hawlyat Al-Montada - National forum for ideology and researches culture"
+  },
+  {
+    "id": "218",
+    "text": "Hilla university college Journal For Medical Science - Hilla University College"
+  },
+  {
+    "id": "189",
+    "text": "Historical studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "46",
+    "text": "Ibn Al-Haitham Journal For Pure and Applied Sciences - Baghdad University"
+  },
+  {
+    "id": "237",
+    "text": "iklil for Humanity Studies - The Iraqi Scientific Society for Manuscripts and Human Studies"
+  },
+  {
+    "id": "225",
+    "text": "Imam Jaafar Al-Sadiq University Journal of Human and Social Sciences - Imam jaafar al-sadiq university"
+  },
+  {
+    "id": "224",
+    "text": "Imam Jaafar Al-Sadiq University Journal of Legal Studies - Imam jaafar al-sadiq university"
+  },
+  {
+    "id": "431",
+    "text": "International journal of Kufa - University of Kufa"
+  },
+  {
+    "id": "547",
+    "text": "International Journal of Religions and Civilizations - National forum for ideology and researches culture"
+  },
+  {
+    "id": "182",
+    "text": "Iranian Studies Journal - Basrah University"
+  },
+  {
+    "id": "474",
+    "text": "IRAOI JOURNAL OF STATISTICAL SCIENCES - Mosul University"
+  },
+  {
+    "id": "285",
+    "text": "IRAQ JOURNAL OF AGRICULTURAL RESEARCH - ministry of agriculture"
+  },
+  {
+    "id": "290",
+    "text": "Iraqi Bulletin of Geology and Mining - Ministry of Industry and Minerals"
+  },
+  {
+    "id": "262",
+    "text": "Iraqi future for political and strategic studies - Kerbala University"
+  },
+  {
+    "id": "257",
+    "text": "Iraqi Journal for Administrative Sciences - Kerbala University"
+  },
+  {
+    "id": "200",
+    "text": "Iraqi Journal for Applied Science - Diyala University"
+  },
+  {
+    "id": "245",
+    "text": "Iraqi Journal for Computer Science and Mathematics - Iraqia University"
+  },
+  {
+    "id": "427",
+    "text": "Iraqi Journal for Computers and Informatics - University Of Information Technology And Communications"
+  },
+  {
+    "id": "323",
+    "text": "Iraqi Journal For Economic Sciences - Mustansiriyah University"
+  },
+  {
+    "id": "168",
+    "text": "Iraqi Journal for Electrical And Electronic Engineering - Basrah University"
+  },
+  {
+    "id": "230",
+    "text": "iraqi journal for information - iraqi association for libraries and information"
+  },
+  {
+    "id": "59",
+    "text": "Iraqi Journal of Agricultural Sciences - Baghdad University"
+  },
+  {
+    "id": "552",
+    "text": "Iraqi Journal of Applied Arts - Middle Technical University"
+  },
+  {
+    "id": "238",
+    "text": "Iraqi Journal of Applied Physics - iraqi society for alternative and renewable energy sources and techniques"
+  },
+  {
+    "id": "241",
+    "text": "Iraqi Journal of Applied Physics Letters - iraqi society for alternative and renewable energy sources and techniques"
+  },
+  {
+    "id": "166",
+    "text": "Iraqi Journal of Aquaculture - Basrah University"
+  },
+  {
+    "id": "120",
+    "text": "Iraqi Journal of Bioscience and Biomedical - Al-Nahrain University"
+  },
+  {
+    "id": "38",
+    "text": "Iraqi Journal of Biotechnology - Baghdad University"
+  },
+  {
+    "id": "322",
+    "text": "Iraqi Journal of Cancer and Medical Genetics - Mustansiriyah University"
+  },
+  {
+    "id": "42",
+    "text": "Iraqi Journal of Chemical and Petroleum Engineering - Baghdad University"
+  },
+  {
+    "id": "481",
+    "text": "Iraqi Journal of Civil Engineering - University of Anbar"
+  },
+  {
+    "id": "321",
+    "text": "IRAQI JOURNAL OF COMMUNITY MEDICINE - Mustansiriyah University"
+  },
+  {
+    "id": "448",
+    "text": "IRAQI JOURNAL OF COMPUTERS, COMMUNICATIONS, CONTROL AND SYSTEMS ENGINEERING - University of Technology"
+  },
+  {
+    "id": "537",
+    "text": "Iraqi Journal of Data Science - Middle Technical University"
+  },
+  {
+    "id": "480",
+    "text": "IRAQI JOURNAL OF DESERT STUDIES - University of Anbar"
+  },
+  {
+    "id": "118",
+    "text": "Iraqi Journal of Embryos and Infertility Researches - Al-Nahrain University"
+  },
+  {
+    "id": "549",
+    "text": "Iraqi Journal of environmental Sciences - Mustansiriyah University"
+  },
+  {
+    "id": "320",
+    "text": "Iraqi Journal of Hematology - Mustansiriyah University"
+  },
+  {
+    "id": "348",
+    "text": "Iraqi Journal of Humanitarian, Social and Scientific Research - Osol Al-Deen University College"
+  },
+  {
+    "id": "289",
+    "text": "Iraqi Journal of Industrial Research - Ministry of Industry and Minerals"
+  },
+  {
+    "id": "119",
+    "text": "Iraqi Journal of Information and communication technology - Al-Nahrain University"
+  },
+  {
+    "id": "570",
+    "text": "Iraqi Journal of Information Systems and Technology - University of Kufa"
+  },
+  {
+    "id": "227",
+    "text": "Iraqi Journal of Information Technology - iraqi association of information"
+  },
+  {
+    "id": "360",
+    "text": "Iraqi Journal of Intelligent Computing and Informatics - Shatt Al-Arab University College"
+  },
+  {
+    "id": "43",
+    "text": "Iraqi Journal of Laser - Baghdad University"
+  },
+  {
+    "id": "37",
+    "text": "Iraqi Journal of Market Research and Consumer Protection - Baghdad University"
+  },
+  {
+    "id": "150",
+    "text": "Iraqi journal of mechanical and material engineering - Babylon University"
+  },
+  {
+    "id": "535",
+    "text": "Iraqi Journal of Medical and Health Sciences - Middle Technical University"
+  },
+  {
+    "id": "121",
+    "text": "IRAQI JOURNAL OF MEDICAL SCIENCES - Al-Nahrain University"
+  },
+  {
+    "id": "373",
+    "text": "Iraqi Journal of Natural Sciences and Nanotechnology - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "447",
+    "text": "Iraqi Journal of Oil and Gas Research - University of Technology"
+  },
+  {
+    "id": "40",
+    "text": "Iraqi Journal of Pharmaceutical Sciences - Baghdad University"
+  },
+  {
+    "id": "473",
+    "text": "Iraqi Journal of Pharmacy - Mosul University"
+  },
+  {
+    "id": "41",
+    "text": "Iraqi Journal of Physics - Baghdad University"
+  },
+  {
+    "id": "229",
+    "text": "Iraqi Journal Of Political Science - Iraq Political Science Association"
+  },
+  {
+    "id": "545",
+    "text": "Iraqi Journal of Psychological Counseling - Iraqi Association Psychological Counseling and Educational Guidance"
+  },
+  {
+    "id": "39",
+    "text": "Iraqi Journal of Science - Baghdad University"
+  },
+  {
+    "id": "293",
+    "text": "Iraqi Journal of Science and Technology - SCIENTIFIC RESEARCH COMMISSION"
+  },
+  {
+    "id": "379",
+    "text": "iraqi journal of soil science - the iraqi society of soil scince"
+  },
+  {
+    "id": "475",
+    "text": "Iraqi Journal of Veterinary Sciences - Mosul University"
+  },
+  {
+    "id": "234",
+    "text": "Iraqi Laser Scientists Journal - Iraqi Laser Scientists Society"
+  },
+  {
+    "id": "242",
+    "text": "Iraqi Laser Society Journal - Iraqi Laser Society"
+  },
+  {
+    "id": "149",
+    "text": "Iraqi National Journal Of Chemistry - Babylon University"
+  },
+  {
+    "id": "472",
+    "text": "Iraqi National Journal of Earth Science - Mosul University"
+  },
+  {
+    "id": "226",
+    "text": "Iraqi National journal of Medicine - Iraqi Association for medical research and studies"
+  },
+  {
+    "id": "36",
+    "text": "Iraqi National Journal of Nursing Specialties - Baghdad University"
+  },
+  {
+    "id": "380",
+    "text": "Iraqi Postgraduate Medical Journal - The Iraqi Borad for Medical Specialization"
+  },
+  {
+    "id": "350",
+    "text": "Iraqi poultry sciences journal - Poultry Science Association"
+  },
+  {
+    "id": "244",
+    "text": "Iraqi Statisticians Journal - Iraqi Statistical Association"
+  },
+  {
+    "id": "89",
+    "text": "ishraqat tanmawia - Al-Araqa Foundation for Culture and Development"
+  },
+  {
+    "id": "144",
+    "text": "ISIN Journal - Al-Qadisiyah University"
+  },
+  {
+    "id": "397",
+    "text": "Islamic Sciences Journal - Tikrit University"
+  },
+  {
+    "id": "239",
+    "text": "Ivy Lee Journal for Public Relations - Iraqi Public Relations Association"
+  },
+  {
+    "id": "114",
+    "text": "Jornal of Al-Muthanna for Agricultural Sciences - Al-Muthanna University"
+  },
+  {
+    "id": "378",
+    "text": "Journal Dawat - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "152",
+    "text": "Journal Human Sciences - Babylon University"
+  },
+  {
+    "id": "292",
+    "text": "Journal inspector general - Ministry Of interior"
+  },
+  {
+    "id": "326",
+    "text": "JOURNAL INTELLIGENCE RESEARCHES - Mustansiriyah University"
+  },
+  {
+    "id": "332",
+    "text": "journal mustansiriyah of sports science - Mustansiriyah University"
+  },
+  {
+    "id": "66",
+    "text": "Journal of Accounting and Financial Studies - Baghdad University"
+  },
+  {
+    "id": "260",
+    "text": "JOURNAL OF ADMINISTRATION AND ECONOMICS - Mustansiriyah University"
+  },
+  {
+    "id": "502",
+    "text": "Journal of Administration and Economics - Kerbala University"
+  },
+  {
+    "id": "522",
+    "text": "Journal of Administrative and Economic Sciences - University of Sumer"
+  },
+  {
+    "id": "85",
+    "text": "Journal of African Studies - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "213",
+    "text": "Journal of Al Imam Al-Adham University College - Faculty of Imam Azam"
+  },
+  {
+    "id": "95",
+    "text": "Journal of Al-Farabi for Humanity Sciences (JFHS) - Al-Farabi University College"
+  },
+  {
+    "id": "96",
+    "text": "Journal of Al-Farabi for Medical Sciences - Al-Farabi University College"
+  },
+  {
+    "id": "395",
+    "text": "Journal of Al-Farahidis Arts - Tikrit University"
+  },
+  {
+    "id": "487",
+    "text": "Journal Of Al-Imam University Collage - Al-imam university college/balad"
+  },
+  {
+    "id": "575",
+    "text": "journal of Al-Itqan for Human Sciences - iraqi quranic sciences association"
+  },
+  {
+    "id": "106",
+    "text": "Journal of Al-Ma'moon College - AlMamon University College"
+  },
+  {
+    "id": "505",
+    "text": "Journal of Al-Ma’rifa for Humanities - Mosul University"
+  },
+  {
+    "id": "134",
+    "text": "Journal of Al-qadisiya in arts and educational sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "136",
+    "text": "Journal of Al-Qadisiyah for Computer Science and Mathematics - Al-Qadisiyah University"
+  },
+  {
+    "id": "146",
+    "text": "JOURNAL OF AL-QALAM UNIVERSITY COLLEGE - Al-Qalam University College"
+  },
+  {
+    "id": "216",
+    "text": "Journal Of AL-Turath University College - Heritage College"
+  },
+  {
+    "id": "105",
+    "text": "Journal of Almaarif University College - AL-MAAREF UNIVERSITY"
+  },
+  {
+    "id": "74",
+    "text": "Journal of Alsalam University - Al Salam University"
+  },
+  {
+    "id": "420",
+    "text": "Journal of Al_Anbar University for Language and Literature - University of Anbar"
+  },
+  {
+    "id": "180",
+    "text": "Journal of Applied Legal Studies - Basrah University"
+  },
+  {
+    "id": "450",
+    "text": "Journal of Applied Sciences and Nanotechnology - University of Technology"
+  },
+  {
+    "id": "442",
+    "text": "Journal of Arabic Language and Literature - University of Kufa"
+  },
+  {
+    "id": "579",
+    "text": "journal of arapkha for historical , archaeological and anthropological studies - Kirkuk University"
+  },
+  {
+    "id": "581",
+    "text": "Journal of Artificial Intelligence in Medical Applications - University of Anbar"
+  },
+  {
+    "id": "159",
+    "text": "Journal Of Babylon Center for Humanities Studies - Babylon University"
+  },
+  {
+    "id": "71",
+    "text": "Journal of Baghdad College of Dentistry - Baghdad University"
+  },
+  {
+    "id": "161",
+    "text": "Journal of Baghdad College of Economic sciences University - Baghdad College of Economic Sciences"
+  },
+  {
+    "id": "461",
+    "text": "journal of Basic Sciences - Wassit University"
+  },
+  {
+    "id": "172",
+    "text": "Journal of Basra researches for Human Sciences - Basrah University"
+  },
+  {
+    "id": "171",
+    "text": "Journal of Basrah Researches (Sciences) - Basrah University"
+  },
+  {
+    "id": "128",
+    "text": "Journal of Biotechnology Research Center - Al-Nahrain University"
+  },
+  {
+    "id": "538",
+    "text": "Journal of Building Research - Ministry of Construction, Housing and Public Municipalities"
+  },
+  {
+    "id": "423",
+    "text": "Journal of Business Economics for Applied Research - University of Fallujah"
+  },
+  {
+    "id": "338",
+    "text": "Journal of College of Education - Mustansiriyah University"
+  },
+  {
+    "id": "463",
+    "text": "Journal of College of Education - Wassit University"
+  },
+  {
+    "id": "277",
+    "text": "Journal of college of Law for Legal and Political Sciences - Kirkuk University"
+  },
+  {
+    "id": "340",
+    "text": "Journal of Contemporary Medical Sciences - Naba alhayat foundation for medical sciences and health care"
+  },
+  {
+    "id": "57",
+    "text": "journal of Economics And Administrative Sciences - Baghdad University"
+  },
+  {
+    "id": "307",
+    "text": "JOURNAL OF EDUCATION AND SCIENCE - Mosul University"
+  },
+  {
+    "id": "249",
+    "text": "Journal of Education and Scientific Studies - Iraqia University"
+  },
+  {
+    "id": "306",
+    "text": "Journal of Education for Humanities - Mosul University"
+  },
+  {
+    "id": "368",
+    "text": "Journal of Education for Modern Specialised Studies - Sunni Endowment"
+  },
+  {
+    "id": "384",
+    "text": "Journal of Education for Pure Science-University of Thi-Qar - Thi-Qar University"
+  },
+  {
+    "id": "53",
+    "text": "Journal Of Educational and Psychological Researches - Baghdad University"
+  },
+  {
+    "id": "58",
+    "text": "Journal of Educational and Psychological Sciences - Baghdad University"
+  },
+  {
+    "id": "550",
+    "text": "Journal of Energy Sustainability And Economic - the Holy Shrine of Imam Hussein"
+  },
+  {
+    "id": "63",
+    "text": "Journal of Engineering - Baghdad University"
+  },
+  {
+    "id": "336",
+    "text": "Journal of Engineering and Sustainable Development (JEASD) - Mustansiriyah University"
+  },
+  {
+    "id": "232",
+    "text": "Journal of Genetic and Environmental Resources Conservation - Iraq Association of Genetic and Environmental Resources Conservation"
+  },
+  {
+    "id": "365",
+    "text": "Journal of heritage samarra - Shiite Endowment"
+  },
+  {
+    "id": "396",
+    "text": "JOURNAL OF HISTORICAL AND CULTURAL STUDIES - Tikrit University"
+  },
+  {
+    "id": "183",
+    "text": "Journal of Historical studies - Basrah University"
+  },
+  {
+    "id": "222",
+    "text": "Journal of Imam Al-Kadhum College - Imam Al-Kadhum College"
+  },
+  {
+    "id": "65",
+    "text": "Journal of International studies - Baghdad University"
+  },
+  {
+    "id": "240",
+    "text": "Journal of Iraqi Al-Khwarizmi - Iraqi Mathematical Socity"
+  },
+  {
+    "id": "70",
+    "text": "journal of Islamic science college - Baghdad University"
+  },
+  {
+    "id": "250",
+    "text": "Journal of Islamic sciences - Iraqia University"
+  },
+  {
+    "id": "203",
+    "text": "Journal of Juridical and Political Science - Diyala University"
+  },
+  {
+    "id": "445",
+    "text": "Journal of Jurisprudence Faculty - University of Kufa"
+  },
+  {
+    "id": "269",
+    "text": "Journal of Kerbala for Agricultural Sciences - Kerbala University"
+  },
+  {
+    "id": "263",
+    "text": "Journal of Kerbala University - Kerbala University"
+  },
+  {
+    "id": "273",
+    "text": "Journal of Kirkuk University Humanity Studies - Kirkuk University"
+  },
+  {
+    "id": "441",
+    "text": "Journal of Kufa - physics - University of Kufa"
+  },
+  {
+    "id": "436",
+    "text": "JOURNAL OF KUFA FOR CHEMICAL SCIENCES - University of Kufa"
+  },
+  {
+    "id": "437",
+    "text": "Journal of Kufa for Mathematics and Computer - University of Kufa"
+  },
+  {
+    "id": "440",
+    "text": "Journal of Kufa legal and political science - University of Kufa"
+  },
+  {
+    "id": "446",
+    "text": "journal of kufa studies center - University of Kufa"
+  },
+  {
+    "id": "398",
+    "text": "journal of Language Studies - Tikrit University"
+  },
+  {
+    "id": "61",
+    "text": "Journal of Legal Sciences - Baghdad University"
+  },
+  {
+    "id": "199",
+    "text": "JOURNAL OF MADENAT ALELEM COLLEGE - City College of Science University"
+  },
+  {
+    "id": "251",
+    "text": "Journal of Media Studies and Research - Iraqia University"
+  },
+  {
+    "id": "557",
+    "text": "Journal of Medical and Oral Biosciences - Iraqia University"
+  },
+  {
+    "id": "521",
+    "text": "Journal of Medical Sciences and Technical Health - Bilad Al Rafidain University College"
+  },
+  {
+    "id": "271",
+    "text": "Journal of Medicinal and Industrial Plant Sciences - Kirkuk University"
+  },
+  {
+    "id": "299",
+    "text": "Journal of Misan Comparative Legal Studies - Misan University"
+  },
+  {
+    "id": "296",
+    "text": "Journal of Misan Researches - Misan University"
+  },
+  {
+    "id": "160",
+    "text": "Journal of Nabu - Babylon University"
+  },
+  {
+    "id": "515",
+    "text": "Journal of Nano Materials Impact - Mustansiriyah University"
+  },
+  {
+    "id": "233",
+    "text": "Journal of Oral and Dental Research - Iraqi Association for Oral Research"
+  },
+  {
+    "id": "294",
+    "text": "Journal of Petroleum Research and Studies - Ministry of Oil"
+  },
+  {
+    "id": "525",
+    "text": "Journal of Pharmacology and Drug Development - Al-Nahrain University"
+  },
+  {
+    "id": "55",
+    "text": "Journal of Physical Education - Baghdad University"
+  },
+  {
+    "id": "99",
+    "text": "Journal of Prospective Researches - Al-Hadba University College"
+  },
+  {
+    "id": "426",
+    "text": "Journal of Researcher for Legal Sciences - University of Fallujah"
+  },
+  {
+    "id": "255",
+    "text": "Journal of Science and Engineering Applications - Islamic University / Najaf"
+  },
+  {
+    "id": "361",
+    "text": "Journal of Shatt Al-Arab University College for Adminsitration and Legal sciences - Shatt Al-Arab University College"
+  },
+  {
+    "id": "519",
+    "text": "Journal of Soft Computing and Computer Applications - University of Technology"
+  },
+  {
+    "id": "211",
+    "text": "JOURNAL OF SPORT SCIENCES - Diyala University"
+  },
+  {
+    "id": "295",
+    "text": "Journal of Sports Sciences and Youth Development - Ministry of Youth and Sports"
+  },
+  {
+    "id": "170",
+    "text": "Journal of Studies and Researches of Sport Education - Basrah University"
+  },
+  {
+    "id": "145",
+    "text": "Journal of Studies in Humanities and Educational Sciences - Al-Qadisiyah University"
+  },
+  {
+    "id": "382",
+    "text": "Journal of sustainable studies - The Scientific Society for Sustainable Educational Studies"
+  },
+  {
+    "id": "284",
+    "text": "Journal of Techniques - Middle Technical University"
+  },
+  {
+    "id": "73",
+    "text": "Journal of the Center Palestine Studies - Baghdad University"
+  },
+  {
+    "id": "339",
+    "text": "journal of the college of basic education - Mustansiriyah University"
+  },
+  {
+    "id": "444",
+    "text": "Journal of the College of Education for Girls for Humanities - University of Kufa"
+  },
+  {
+    "id": "67",
+    "text": "Journal of the College of Education for Women - Baghdad University"
+  },
+  {
+    "id": "303",
+    "text": "Journal of the College of Islamic Sciences - Mosul University"
+  },
+  {
+    "id": "45",
+    "text": "Journal of the College of Languages - Baghdad University"
+  },
+  {
+    "id": "127",
+    "text": "Journal Of the College of law /Al-Nahrain University - Al-Nahrain University"
+  },
+  {
+    "id": "68",
+    "text": "Journal of the Faculty of Medicine Baghdad - Baghdad University"
+  },
+  {
+    "id": "247",
+    "text": "Journal of The Iraqi University - Iraqia University"
+  },
+  {
+    "id": "62",
+    "text": "Journal of the planner and development - Baghdad University"
+  },
+  {
+    "id": "408",
+    "text": "Journal of Tikrit University for Humanities - Tikrit University"
+  },
+  {
+    "id": "414",
+    "text": "Journal of University of Anbar for Humanities - University of Anbar"
+  },
+  {
+    "id": "418",
+    "text": "Journal of university of Anbar for Pure science - University of Anbar"
+  },
+  {
+    "id": "155",
+    "text": "Journal of University of Babylon - Babylon University"
+  },
+  {
+    "id": "470",
+    "text": "Journal Of Wassit For Science & Medicine - Wassit University"
+  },
+  {
+    "id": "457",
+    "text": "journal port science research - Uruk Private University"
+  },
+  {
+    "id": "367",
+    "text": "Journal wlkalam - Shiite Endowment"
+  },
+  {
+    "id": "429",
+    "text": "Journals geographic - University of Kufa"
+  },
+  {
+    "id": "267",
+    "text": "Karbala International Journal of Modern Science - Kerbala University"
+  },
+  {
+    "id": "266",
+    "text": "Karbala Journal of Medicine - Kerbala University"
+  },
+  {
+    "id": "268",
+    "text": "Karbala Journal of Physical Education Sciences - Kerbala University"
+  },
+  {
+    "id": "366",
+    "text": "KARBALĀʾ HERITAGE Quarterly Authorized Journal Specialized in Karbalāʾ Heritage - Shiite Endowment"
+  },
+  {
+    "id": "488",
+    "text": "Kerbala International Journal of Management and Economics - Kerbala University"
+  },
+  {
+    "id": "259",
+    "text": "Kerbala Journal for Engineering Sciences - Kerbala University"
+  },
+  {
+    "id": "518",
+    "text": "Kerbala Journal of Nursing and Health Sciences - Kerbala University"
+  },
+  {
+    "id": "270",
+    "text": "kerbala journal of pharmaceutical sciences - Kerbala University"
+  },
+  {
+    "id": "543",
+    "text": "Kerbala Journal of Veterinary Medical Sciences - Kerbala University"
+  },
+  {
+    "id": "201",
+    "text": "Khazayin of Economic and Administrative Sciences - Diyala University"
+  },
+  {
+    "id": "528",
+    "text": "Kirkuk Journal of Arts - Kirkuk University"
+  },
+  {
+    "id": "276",
+    "text": "Kirkuk Journal of Medical Sciences - Kirkuk University"
+  },
+  {
+    "id": "272",
+    "text": "Kirkuk Journal of Science - Kirkuk University"
+  },
+  {
+    "id": "275",
+    "text": "Kirkuk University Journal For Agricultural Sciences (KUJAS) - Kirkuk University"
+  },
+  {
+    "id": "438",
+    "text": "Kufa Journal for Agricultural Sciences - University of Kufa"
+  },
+  {
+    "id": "435",
+    "text": "kufa Journal for Nursing sciences - University of Kufa"
+  },
+  {
+    "id": "439",
+    "text": "Kufa Journal For Veterinary Medical Sciences - University of Kufa"
+  },
+  {
+    "id": "428",
+    "text": "Kufa Journal of Arts - University of Kufa"
+  },
+  {
+    "id": "433",
+    "text": "KUFA JOURNAL OF ENGINEERING - University of Kufa"
+  },
+  {
+    "id": "493",
+    "text": "Kufa Journal of Pharmaceutical Sciences - University of Kufa"
+  },
+  {
+    "id": "434",
+    "text": "kufa journal Physical Education Sciences - University of Kufa"
+  },
+  {
+    "id": "432",
+    "text": "KUFA MEDICAL JOURNAL - University of Kufa"
+  },
+  {
+    "id": "282",
+    "text": "Kut University College Journal for Humanitarian Science - kut university college"
+  },
+  {
+    "id": "464",
+    "text": "LARK JOURNAL FOR PHILOSOPHY, LINGUISTICS AND SOCIAL SCIENCES - Wassit University"
+  },
+  {
+    "id": "193",
+    "text": "Law studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "370",
+    "text": "Leadership Thought for Research and Studies - The Higher Institute for Preparing and Qualifying Leaders"
+  },
+  {
+    "id": "236",
+    "text": "Linguistic Papers - Iraqi Linguists Asso"
+  },
+  {
+    "id": "188",
+    "text": "Linguistics and Translation Studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "413",
+    "text": "Maaen Journal for Medical Sciences - University of Alkafeel"
+  },
+  {
+    "id": "363",
+    "text": "magazine aldhakwat albedh - Shiite Endowment"
+  },
+  {
+    "id": "157",
+    "text": "magazine of college Administration&Economics for economic & administration & financial studies - Babylon University"
+  },
+  {
+    "id": "44",
+    "text": "Magazine of historical studies and archaeology - Baghdad University"
+  },
+  {
+    "id": "169",
+    "text": "Managerial Studies Journal - Basrah University"
+  },
+  {
+    "id": "173",
+    "text": "Marsh Bulletin - Basrah University"
+  },
+  {
+    "id": "283",
+    "text": "Mashreq Journal of Medical Sciences (MJMS) - Mashreq University"
+  },
+  {
+    "id": "154",
+    "text": "Medical Journal of Babylon - Babylon University"
+  },
+  {
+    "id": "458",
+    "text": "Meras journal - university of warith al-anbiyaa"
+  },
+  {
+    "id": "151",
+    "text": "Mesopotamia Environmental Journal - Babylon University"
+  },
+  {
+    "id": "314",
+    "text": "Mesopotamia Journal of Agriculture - Mosul University"
+  },
+  {
+    "id": "526",
+    "text": "Mesopotamian Journal of Artificial Intelligence in Healthcare - Imam jaafar al-sadiq university"
+  },
+  {
+    "id": "565",
+    "text": "Mesopotamian Journal of Computer Science - Imam jaafar al-sadiq university"
+  },
+  {
+    "id": "223",
+    "text": "Mesopotamian Journal of CyberSecurity - Imam jaafar al-sadiq university"
+  },
+  {
+    "id": "185",
+    "text": "Mesopotamian Journal of Marine Science - Basrah University"
+  },
+  {
+    "id": "254",
+    "text": "Midad Al-Adab Refereed Journal - Iraqia University"
+  },
+  {
+    "id": "517",
+    "text": "Minwal Journal - Iraqi Association for Educational and Psychological Studies"
+  },
+  {
+    "id": "297",
+    "text": "Misan Journal for Physical Education Sciences - Misan University"
+  },
+  {
+    "id": "298",
+    "text": "Misan Journal of Academic Studies - Misan University"
+  },
+  {
+    "id": "572",
+    "text": "Misan Journal of Agricultural and Environmental Sciences - Misan University"
+  },
+  {
+    "id": "300",
+    "text": "Misan Journal of Engineering Sciences - Misan University"
+  },
+  {
+    "id": "540",
+    "text": "Misan Journal of Political and International Studies - Misan University"
+  },
+  {
+    "id": "34",
+    "text": "Modern Sport - Baghdad University"
+  },
+  {
+    "id": "312",
+    "text": "Mosul Journal of Nursing - Mosul University"
+  },
+  {
+    "id": "331",
+    "text": "MUSTANSIRIA DENTAL JOURNAL - Mustansiriyah University"
+  },
+  {
+    "id": "330",
+    "text": "Mustansiriya Medical Journal - Mustansiriyah University"
+  },
+  {
+    "id": "325",
+    "text": "Mustansiriyah Journal of Arts - Mustansiriyah University"
+  },
+  {
+    "id": "333",
+    "text": "Mustansiriyah Journal of Humanities - Mustansiriyah University"
+  },
+  {
+    "id": "584",
+    "text": "Mustansiriyah Journal of Materials Engineering and Sustainability - Mustansiriyah University"
+  },
+  {
+    "id": "334",
+    "text": "Mustansiriyah journal of pure and applied sciences - Mustansiriyah University"
+  },
+  {
+    "id": "113",
+    "text": "Muthanna Journal of Administrative and Economic Sciences - Al-Muthanna University"
+  },
+  {
+    "id": "116",
+    "text": "Muthanna Journal of Engineering and Technology(MJET) - Al-Muthanna University"
+  },
+  {
+    "id": "115",
+    "text": "Muthanna Journal of Pure Science (MJPS) - Al-Muthanna University"
+  },
+  {
+    "id": "111",
+    "text": "Muthanna Medical Journal - Al-Muthanna University"
+  },
+  {
+    "id": "86",
+    "text": "NABIYUNA JOURNAL - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "219",
+    "text": "Nanar Journal for Humanities and Social Sciences - Hilla University College"
+  },
+  {
+    "id": "235",
+    "text": "Nasaq - Iraqi Association for Educational and Psychological Studies"
+  },
+  {
+    "id": "342",
+    "text": "Ninevah Journal for Legal Studies - Nineveh University"
+  },
+  {
+    "id": "344",
+    "text": "NTU Journal for Administrative and Human Sciences - Northern Technical University"
+  },
+  {
+    "id": "345",
+    "text": "NTU Journal of Agricultural and Veterinary Sciences - Northern Technical University"
+  },
+  {
+    "id": "347",
+    "text": "NTU Journal of Engineering and Technology - Northern Technical University"
+  },
+  {
+    "id": "346",
+    "text": "NTU Journal of Pure Sciences - Northern Technical University"
+  },
+  {
+    "id": "343",
+    "text": "NTU Journal of Renewable Energy - Northern Technical University"
+  },
+  {
+    "id": "349",
+    "text": "Osol Journal for Medical Sciences - Osol Al-Deen University College"
+  },
+  {
+    "id": "194",
+    "text": "Philosophical Studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "329",
+    "text": "Philosophy Journal - Mustansiriyah University"
+  },
+  {
+    "id": "534",
+    "text": "Police College Journal of Security and Community Sciences - Ministry Of interior"
+  },
+  {
+    "id": "122",
+    "text": "political issues - Al-Nahrain University"
+  },
+  {
+    "id": "60",
+    "text": "Political Sciences Journal - Baghdad University"
+  },
+  {
+    "id": "187",
+    "text": "Political Studies and strategic - Bayt Al-Hikma"
+  },
+  {
+    "id": "288",
+    "text": "Psychological Science - Ministry of higher education and scientific research"
+  },
+  {
+    "id": "265",
+    "text": "Pure Sciences International Journal of Kerbala - Kerbala University"
+  },
+  {
+    "id": "362",
+    "text": "Qirtas Al-Ma’rifa - Shiite Endowment"
+  },
+  {
+    "id": "316",
+    "text": "Rafidain journal of science - Mosul University"
+  },
+  {
+    "id": "313",
+    "text": "Regional Studies Journal - Mosul University"
+  },
+  {
+    "id": "191",
+    "text": "Religion Studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "369",
+    "text": "Research and Islamic Studies Journal - Sunni Endowment"
+  },
+  {
+    "id": "425",
+    "text": "Researcher Journal For Islamic Sciences - University of Fallujah"
+  },
+  {
+    "id": "264",
+    "text": "Risalat al-huquq Journal - Kerbala University"
+  },
+  {
+    "id": "452",
+    "text": "Samarra Journal of Engineering Science and Research - University of Samarra"
+  },
+  {
+    "id": "453",
+    "text": "Samarra Journal of Pure and Applied Science - University of Samarra"
+  },
+  {
+    "id": "576",
+    "text": "Sawa Journal for Humanities - University of Sawa"
+  },
+  {
+    "id": "548",
+    "text": "Sawa Medical Journal - University of Sawa"
+  },
+  {
+    "id": "156",
+    "text": "Sciences Journal Of Physical Education - Babylon University"
+  },
+  {
+    "id": "186",
+    "text": "Social Studies - Bayt Al-Hikma"
+  },
+  {
+    "id": "393",
+    "text": "Sport culture - Tikrit University"
+  },
+  {
+    "id": "454",
+    "text": "Sulaimania Journal for Engineering Sciences - university of Sulaimania"
+  },
+  {
+    "id": "287",
+    "text": "Sumer Journal - Ministry of Culture,Tourism and Antiquities"
+  },
+  {
+    "id": "456",
+    "text": "Sumer Journal for Pure Science - University of Sumer"
+  },
+  {
+    "id": "556",
+    "text": "Sumer Journal of Legal Sciences - University of Sumer"
+  },
+  {
+    "id": "455",
+    "text": "Sumer University Journal for humanity science - University of Sumer"
+  },
+  {
+    "id": "486",
+    "text": "Surra Man Ra'a - University of Samarra"
+  },
+  {
+    "id": "585",
+    "text": "Tadween Journal of Legal and Political Sciences - Imam Al-Kadhum College"
+  },
+  {
+    "id": "301",
+    "text": "TANMIAT AL-RAFIDAIN - Mosul University"
+  },
+  {
+    "id": "84",
+    "text": "TASLEEM JOURNAL - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "546",
+    "text": "Technical Journal of Management Sciences - Middle Technical University"
+  },
+  {
+    "id": "179",
+    "text": "The Arab Gulf - Basrah University"
+  },
+  {
+    "id": "319",
+    "text": "The International and Political Journal - Mustansiriyah University"
+  },
+  {
+    "id": "228",
+    "text": "The Iraqi Journal for Information and Documentation Studies - Iraqi Association for Libraries and Documentation Specialists"
+  },
+  {
+    "id": "449",
+    "text": "The Iraqi Journal of Architecture and Planning - University of Technology"
+  },
+  {
+    "id": "33",
+    "text": "The Iraqi Journal of Veterinary Medicine - Baghdad University"
+  },
+  {
+    "id": "256",
+    "text": "The islamic college university journal - Islamic University / Najaf"
+  },
+  {
+    "id": "385",
+    "text": "The Journal of Law Research - Thi-Qar University"
+  },
+  {
+    "id": "167",
+    "text": "The Medical Journal of Basrah University - Basrah University"
+  },
+  {
+    "id": "394",
+    "text": "The Medical Journal of Tikrit University - Tikrit University"
+  },
+  {
+    "id": "231",
+    "text": "The Scientific Review of the Iraqi Counter Terrorism Service - Iraqi Counter Terrorism Service"
+  },
+  {
+    "id": "364",
+    "text": "The White Dome Journal - Shiite Endowment"
+  },
+  {
+    "id": "383",
+    "text": "Thi Qar Arts Journal - Thi-Qar University"
+  },
+  {
+    "id": "392",
+    "text": "Thi-Qar journal for human science - Thi-Qar University"
+  },
+  {
+    "id": "387",
+    "text": "Thi-Qar journal of physical education and sports science - Thi-Qar University"
+  },
+  {
+    "id": "390",
+    "text": "Thi-Qar Medical Journal - Thi-Qar University"
+  },
+  {
+    "id": "388",
+    "text": "Thi-Qar University Journal for Agricultural Researches - Thi-Qar University"
+  },
+  {
+    "id": "402",
+    "text": "Tikrit Journal for Agricultural Sciences - Tikrit University"
+  },
+  {
+    "id": "399",
+    "text": "Tikrit Journal for Dental Sciences - Tikrit University"
+  },
+  {
+    "id": "403",
+    "text": "Tikrit Journal for Political Science - Tikrit University"
+  },
+  {
+    "id": "400",
+    "text": "Tikrit Journal of Administrative and Economic Sciences - Tikrit University"
+  },
+  {
+    "id": "406",
+    "text": "Tikrit Journal of Engineering Sciences - Tikrit University"
+  },
+  {
+    "id": "405",
+    "text": "Tikrit Journal of Pharmaceutical Sciences - Tikrit University"
+  },
+  {
+    "id": "404",
+    "text": "Tikrit Journal of Pure Science - Tikrit University"
+  },
+  {
+    "id": "401",
+    "text": "Tikrit Journal of Veterinary Sciences - Tikrit University"
+  },
+  {
+    "id": "407",
+    "text": "TIKRIT UNIVERSITY JOURNAL FOR RIGHTS - Tikrit University"
+  },
+  {
+    "id": "409",
+    "text": "Tikrit University Journal for Scientific Islamic - Tikrit University"
+  },
+  {
+    "id": "243",
+    "text": "Translation & linguistics - Iraqi Translators association"
+  },
+  {
+    "id": "80",
+    "text": "Turath AL-Hillah - AL-Abbas Holy Shrine"
+  },
+  {
+    "id": "417",
+    "text": "University of Anbar Sport and Physical Education Science Journal - University of Anbar"
+  },
+  {
+    "id": "274",
+    "text": "University of Kirkuk Journal For Administrative and Economic Science - Kirkuk University"
+  },
+  {
+    "id": "389",
+    "text": "University of Thi-Qar Journal for Engineering Sciences - Thi-Qar University"
+  },
+  {
+    "id": "391",
+    "text": "University of Thi-Qar Journal of Science - Thi-Qar University"
+  },
+  {
+    "id": "386",
+    "text": "Univesity of Thi-Qar Journal - Thi-Qar University"
+  },
+  {
+    "id": "491",
+    "text": "Ur Journal for Human Sciences - Shatrah University"
+  },
+  {
+    "id": "117",
+    "text": "URUK FOR HUMANITIES - Al-Muthanna University"
+  },
+  {
+    "id": "554",
+    "text": "Vision Journal for Social Studies - Sunni Endowment"
+  },
+  {
+    "id": "553",
+    "text": "waai Journal for the Human Sciences - Sunni Endowment"
+  },
+  {
+    "id": "459",
+    "text": "Warith Scientific Journal - university of warith al-anbiyaa"
+  },
+  {
+    "id": "536",
+    "text": "Warith Scientific Journal of Engineering and Technology - university of warith al-anbiyaa"
+  },
+  {
+    "id": "466",
+    "text": "Wasit Journal for Human Sciences - Wassit University"
+  },
+  {
+    "id": "468",
+    "text": "Wasit Journal for Pure Sciences - Wassit University"
+  },
+  {
+    "id": "465",
+    "text": "Wasit Journal of Computer and Mathematics Science - Wassit University"
+  },
+  {
+    "id": "469",
+    "text": "Wasit Journal of Engineering Sciences - Wassit University"
+  },
+  {
+    "id": "467",
+    "text": "Wasit Journal Of Sports Sciences - Wassit University"
+  },
+  {
+    "id": "354",
+    "text": "Zanco Journal of Human Sciences - Salahaddin University- Erbil"
+  },
+  {
+    "id": "215",
+    "text": "Zanco Journal of Medical Sciences - Hawler Medical Univeristy"
+  },
+  {
+    "id": "355",
+    "text": "Zanco Journal of Pure and Applied Sciences - Salahaddin University- Erbil"
+  }
+]

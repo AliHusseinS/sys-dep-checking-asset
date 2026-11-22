@@ -152,7 +152,7 @@
             <i class="fa-solid fa-user-graduate"></i>
           </div>
           <div class="text-right">
-            <span id="faculty-name-display" class="block text-xs font-bold text-white max-w-[130px] truncate">د. تدريسي</span>
+            <span id="faculty-name-display" class="block text-xs font-bold text-white max-w-[130px] truncate">اسم التدريسي</span>
             <span id="faculty-phone-display" class="block text-[10px] text-slate-400 font-mono">07800000000</span>
           </div>
           <button onclick="handleFacultyLogout()" title="تسجيل الخروج" class="mr-1 text-slate-400 hover:text-rose-400 p-1 transition">
@@ -226,11 +226,11 @@
           <!-- حقل الاسم (يظهر تلقائياً إذا كان الرقم جديداً، ويختفي إذا كان مسجلاً) -->
           <div id="field-faculty-name-container" class="transition-all duration-300">
             <label class="block text-xs font-bold text-slate-300 mb-1.5">
-              <i class="fa-solid fa-id-card text-amber-400 ml-1"></i> الاسم الثلاثي واللقب العلمي للتدريسي:
+              <i class="fa-solid fa-id-card text-amber-400 ml-1"></i> الاسم الثلاثي للتدريسي:
             </label>
             <input type="text" 
                    id="input-faculty-name" 
-                   placeholder="مثال: أ.م.د. علي حسين حميد المحنة" 
+                   placeholder="مثال: علي حسين حميد" 
                    class="w-full bg-slate-950 border border-slate-700 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 rounded-xl px-4 py-3 text-white text-sm outline-none transition">
           </div>
 
@@ -1024,8 +1024,8 @@
       let faculties = getStoredFaculties();
       if (faculties.length === 0) {
         faculties = [
-          { phone: '07801234567', name: 'أ.م.د. أحمد عبد الحسين الكعبي', registeredAt: new Date().toLocaleDateString('ar-IQ') },
-          { phone: '07709876543', name: 'أ.د. حيدر كاظم شاكر البغدادي', registeredAt: new Date().toLocaleDateString('ar-IQ') }
+          { phone: '07801234567', name: 'أحمد عبد الحسين الكعبي', registeredAt: new Date().toLocaleDateString('ar-IQ') },
+          { phone: '07709876543', name: 'حيدر كاظم شاكر البغدادي', registeredAt: new Date().toLocaleDateString('ar-IQ') }
         ];
         saveStoredFaculties(faculties);
       }
@@ -1124,7 +1124,7 @@
       if (key.length >= 10) {
         const found = faculties.find(f => normalizePhoneKey(f.phone) === key);
         if (found) {
-          statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً د. ' + found.name + '</span>';
+          statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً ' + found.name + '</span>';
           nameInput.value = found.name;
           nameContainer.classList.add('hidden'); // إخفاء حقل الاسم لأنه مسجل مسبقاً
           return;
@@ -1138,7 +1138,7 @@
             .then(r => r.json())
             .then(data => {
               if (data && data.registered && data.name) {
-                statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً د. ' + data.name + '</span>';
+                statusSpan.innerHTML = '<span class="text-emerald-400"><i class="fa-solid fa-user-check"></i> مرحباً ' + data.name + '</span>';
                 nameInput.value = data.name;
                 nameContainer.classList.add('hidden');
                 saveOrUpdateFacultyLocal(phoneVal, data.name);
@@ -1285,7 +1285,7 @@
       Swal.fire({
         icon: 'success',
         title: 'تم تسجيل الدخول بنجاح',
-        text: 'أهلاً بك د. ' + currentFaculty.name,
+        text: 'أهلاً بك ' + currentFaculty.name,
         timer: 1500,
         showConfirmButton: false
       }).then(() => {

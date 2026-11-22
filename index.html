@@ -829,9 +829,9 @@
             </label>
             <span id="wa-server-indicator" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400">...</span>
           </div>
-          <input type="url" id="setting-wa-url" placeholder="http://localhost:3000/send-otp" class="w-full bg-slate-950 border border-slate-700 focus:border-emerald-400 rounded-xl px-3.5 py-2.5 text-white text-xs font-mono outline-none" dir="ltr">
+          <input type="url" id="setting-wa-url" placeholder="https://otp.physplan.com/send-otp" class="w-full bg-slate-950 border border-slate-700 focus:border-emerald-400 rounded-xl px-3.5 py-2.5 text-white text-xs font-mono outline-none" dir="ltr">
           <div class="flex items-center justify-between mt-1 text-[11px] text-slate-400">
-            <span>شغّل ملف <code class="text-emerald-300 font-mono">start.bat</code> وامسح الـ QR برقمك الشخصي.</span>
+            <span>خادم WhatsApp API مؤمّن ومربوط عبر <code class="text-emerald-300 font-mono">otp.physplan.com</code></span>
             <button type="button" onclick="testWhatsAppMessage()" class="text-emerald-400 hover:text-emerald-300 font-bold transition">
               <i class="fa-solid fa-paper-plane text-[10px]"></i> تجربة إرسال لهاتفي
             </button>
@@ -1975,23 +1975,24 @@
     // دوال خادم WhatsApp Phone API لإرسال OTP من رقم الهاتف
     // -------------------------------------------------------------
     const STORAGE_KEY_WA_URL = 'sobriety_whatsapp_api_url';
-    const DEFAULT_WA_URL = 'http://localhost:3000/send-otp';
+    const DEFAULT_WA_URL = 'https://otp.physplan.com/send-otp';
+    const WA_API_KEY = 'kufa-otp-secret-key-2026';
 
     async function sendWhatsAppOtp(phone, otp) {
       const waUrl = localStorage.getItem(STORAGE_KEY_WA_URL) || DEFAULT_WA_URL;
       const cleanPhone = phone.replace(/[\s\-\+\(\)]/g, '');
       const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
 
-      const message = `*جامعة الكوفة — كلية التخطيط العمراني*\n*منظومة فحص رصانة البحوث العلمية*\n\nرمز التحقق الخاص بك (OTP) هو: *${otp}*\n\nصلاحية الرمز 5 دقائق. يرجى عدم مشاركته مع أي شخص.`;
-
       try {
         const res = await fetch(waUrl, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': WA_API_KEY
+          },
           body: JSON.stringify({
             phone: formatted,
-            otp: otp,
-            message: message
+            otp: otp
           })
         });
         const data = await res.json();
@@ -2032,14 +2033,14 @@
         const data = await res.json();
         if (data.connected) {
           ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
-          ind.innerHTML = '<i class="fa-solid fa-circle-check"></i> متصل: +' + data.phone;
+          ind.innerHTML = '<i class="fa-solid fa-circle-check"></i> متصل: ' + data.phone;
         } else {
           ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30';
           ind.innerHTML = '<i class="fa-solid fa-qrcode"></i> بانتظار مسح QR';
         }
       } catch (e) {
         ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400';
-        ind.innerHTML = 'غير مشغل محلياً';
+        ind.innerHTML = 'غير متصل';
       }
     }
 
@@ -2057,11 +2058,13 @@
 
         const res = await fetch(waUrl, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': WA_API_KEY
+          },
           body: JSON.stringify({
             phone: formatted,
-            otp: testOtp,
-            message: `*رسالة اختبارية من خادم WhatsApp Phone API*\n\nتم إرسال كود التجربة بنجاح: *${testOtp}*`
+            otp: testOtp
           })
         });
         const data = await res.json();

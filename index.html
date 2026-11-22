@@ -252,20 +252,15 @@
             <span id="otp-target-phone" class="font-mono font-bold text-white mr-1" dir="ltr">07800000000</span>
           </div>
 
-          <!-- إشعار تجريبي فوري بالرمز لتسهيل الاختبار -->
-          <div class="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl text-right">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-amber-300 flex items-center gap-1.5">
-                <i class="fa-solid fa-key"></i> رمز التحقق للتجربة الفورية:
-              </span>
-              <button onclick="autoFillOtp()" class="text-[11px] bg-amber-500/20 hover:bg-amber-500/30 text-amber-200 px-2 py-0.5 rounded font-bold transition">
-                تعبئة تلقائية
-              </button>
-            </div>
-            <div class="mt-1 flex items-center justify-between">
-              <span id="demo-otp-badge" class="font-mono text-lg font-black text-amber-400 tracking-widest">1234</span>
-              <span class="text-[11px] text-slate-400">ينتهي خلال <span id="otp-timer">60</span> ثانية</span>
-            </div>
+          <!-- مؤقت صلاحية الرمز والتعليمات -->
+          <div class="p-3 bg-slate-900/60 border border-slate-800 rounded-xl text-center space-y-1">
+            <p class="text-xs text-slate-300">
+              <i class="fa-brands fa-whatsapp text-emerald-400 ml-1"></i>
+              وصلك رمز مكون من 4 أرقام عبر تطبيق WhatsApp
+            </p>
+            <p class="text-[11px] text-slate-400">
+              صلاحية الرمز تنتهي خلال: <span id="otp-timer" class="font-mono font-bold text-emerald-400">60</span> ثانية
+            </p>
           </div>
 
           <!-- مربعات إدخال الرمز -->
@@ -1171,7 +1166,6 @@
       document.getElementById('otp-step-phone').classList.add('hidden');
       document.getElementById('otp-step-verify').classList.remove('hidden');
       document.getElementById('otp-target-phone').innerText = phone;
-      document.getElementById('demo-otp-badge').innerText = generatedOtp;
 
       // تصفير المربعات
       for (let i = 1; i <= 4; i++) {
@@ -1187,24 +1181,6 @@
       saveOrUpdateFacultyLocal(phone, name);
       syncFacultyToGas(phone, name);
       sendWhatsAppOtp(phone, generatedOtp);
-
-      Swal.fire({
-        toast: true,
-        position: 'top-end',
-        icon: 'info',
-        title: 'تم إرسال رمز التحقق OTP: ' + generatedOtp,
-        showConfirmButton: false,
-        timer: 4000
-      });
-    }
-
-    function autoFillOtp() {
-      if (!generatedOtp) return;
-      for (let i = 0; i < 4; i++) {
-        const el = document.getElementById('otp-' + (i + 1));
-        if (el) el.value = generatedOtp[i];
-      }
-      verifyOtpAndLogin();
     }
 
     function handleOtpInput(input, index) {
@@ -1253,11 +1229,11 @@
         entered += (document.getElementById('otp-' + i).value || '').trim();
       }
 
-      if (entered !== generatedOtp && entered !== '1234') {
+      if (entered !== generatedOtp) {
         Swal.fire({
           icon: 'error',
           title: 'رمز التحقق غير صحيح',
-          text: 'يرجى التأكد من الرمز المدخل أو الضغط على تعبئة تلقائية.',
+          text: 'يرجى مراجعة رسالة تطبيق WhatsApp وإدخال الرمز المكون من 4 أرقام بدقة.',
           confirmButtonText: 'محاولة ثانية'
         });
         return;
@@ -2001,8 +1977,18 @@
             toast: true,
             position: 'top-end',
             icon: 'success',
-            title: 'تم إرسال رمز التحقق عبر واتساب من رقمك',
-            text: `إلى الهاتف: +${formatted}`,
+            title: 'تم إرسال رمز التحقق عبر واتساب',
+            text: 'يرجى مراجعة رسائل تطبيق WhatsApp على هاتفك',
+            showConfirmButton: false,
+            timer: 4500
+          });
+          return;
+        } else {
+          Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'warning',
+            title: data.error || 'تعذر إرسال الرمز عبر واتساب',
             showConfirmButton: false,
             timer: 4500
           });
@@ -2012,12 +1998,12 @@
         console.log('WhatsApp gateway offline or unreachable:', err);
       }
 
-      // إشعار فوري على الشاشة في حال لم يكن خادم واتساب مشغلاً بعد
       Swal.fire({
         toast: true,
         position: 'top-end',
-        icon: 'info',
-        title: 'رمز التحقق السريع (OTP): ' + otp,
+        icon: 'error',
+        title: 'تعذر الاتصال بخادم واتساب',
+        text: 'يرجى التأكد من اتصال الخادم والمحاولة مرة أخرى',
         showConfirmButton: false,
         timer: 4000
       });

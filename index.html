@@ -2043,7 +2043,7 @@
     }
 
     async function checkWhatsAppServerStatus() {
-      const baseUrl = 'https://otp.physplan.com/status';
+      const baseUrl = 'https://otp.physplan.com/status?_t=' + Date.now();
       const ind = document.getElementById('wa-server-indicator');
       if (!ind) return;
       try {

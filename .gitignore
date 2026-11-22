@@ -5,3 +5,16 @@ logo_base64.txt
 __pycache__/
 *.pyc
 .system_generated/
+
+# Local utility scripts and temp data
+.clasp.json
+appsscript.json
+auto_deploy.py
+add_login_screen.js
+add_pdf_logo.js
+CNAME
+iasj_*.json
+predatory_*.json
+sinc-cheeck-Load/
+*.pdf
+whatsapp_gateway/

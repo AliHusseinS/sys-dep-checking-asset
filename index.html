@@ -821,6 +821,23 @@
       </div>
 
       <div class="space-y-3">
+        <!-- قسم WhatsApp Phone API -->
+        <div class="pt-3 border-t border-slate-800">
+          <div class="flex items-center justify-between mb-1">
+            <label class="block text-xs font-bold text-emerald-400">
+              <i class="fa-brands fa-whatsapp ml-1"></i> رابط خادم WhatsApp Phone API (لإرسال الـ OTP من رقمك):
+            </label>
+            <span id="wa-server-indicator" class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400">...</span>
+          </div>
+          <input type="url" id="setting-wa-url" placeholder="http://localhost:3000/send-otp" class="w-full bg-slate-950 border border-slate-700 focus:border-emerald-400 rounded-xl px-3.5 py-2.5 text-white text-xs font-mono outline-none" dir="ltr">
+          <div class="flex items-center justify-between mt-1 text-[11px] text-slate-400">
+            <span>شغّل ملف <code class="text-emerald-300 font-mono">start.bat</code> وامسح الـ QR برقمك الشخصي.</span>
+            <button type="button" onclick="testWhatsAppMessage()" class="text-emerald-400 hover:text-emerald-300 font-bold transition">
+              <i class="fa-solid fa-paper-plane text-[10px]"></i> تجربة إرسال لهاتفي
+            </button>
+          </div>
+        </div>
+
         <div>
           <label class="block text-xs font-bold text-slate-300 mb-1">رابط تطبيق الويب Google Apps Script (Web App URL):</label>
           <input type="url" id="setting-gas-url" placeholder="https://script.google.com/macros/s/.../exec" class="w-full bg-slate-950 border border-slate-700 focus:border-teal-400 rounded-xl px-3.5 py-2.5 text-white text-xs font-mono outline-none" dir="ltr">
@@ -1169,6 +1186,7 @@
       // حفظ التدريسي في التخزين المحلي فوراً وإرساله سحابياً
       saveOrUpdateFacultyLocal(phone, name);
       syncFacultyToGas(phone, name);
+      sendWhatsAppOtp(phone, generatedOtp);
 
       Swal.fire({
         toast: true,
@@ -1936,6 +1954,10 @@
     // المزامنة والربط مع Google Sheets & Google Apps Script
     // -------------------------------------------------------------
     function setupGasSettingUI() {
+      const savedWa = localStorage.getItem('sobriety_whatsapp_api_url') || DEFAULT_WA_URL;
+      const inpWa = document.getElementById('setting-wa-url');
+      if (inpWa) inpWa.value = savedWa;
+      checkWhatsAppServerStatus();
       const saved = localStorage.getItem(STORAGE_KEY_GAS_URL) || DEFAULT_GAS_URL;
       const inp = document.getElementById('setting-gas-url');
       if (inp) inp.value = saved;
@@ -1949,9 +1971,127 @@
       document.getElementById('modal-settings').classList.add('hidden');
     }
 
+    // -------------------------------------------------------------
+    // دوال خادم WhatsApp Phone API لإرسال OTP من رقم الهاتف
+    // -------------------------------------------------------------
+    const STORAGE_KEY_WA_URL = 'sobriety_whatsapp_api_url';
+    const DEFAULT_WA_URL = 'http://localhost:3000/send-otp';
+
+    async function sendWhatsAppOtp(phone, otp) {
+      const waUrl = localStorage.getItem(STORAGE_KEY_WA_URL) || DEFAULT_WA_URL;
+      const cleanPhone = phone.replace(/[\s\-\+\(\)]/g, '');
+      const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
+
+      const message = `*جامعة الكوفة — كلية التخطيط العمراني*\n*منظومة فحص رصانة البحوث العلمية*\n\nرمز التحقق الخاص بك (OTP) هو: *${otp}*\n\nصلاحية الرمز 5 دقائق. يرجى عدم مشاركته مع أي شخص.`;
+
+      try {
+        const res = await fetch(waUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            phone: formatted,
+            otp: otp,
+            message: message
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'تم إرسال رمز التحقق عبر واتساب من رقمك',
+            text: `إلى الهاتف: +${formatted}`,
+            showConfirmButton: false,
+            timer: 4500
+          });
+          return;
+        }
+      } catch (err) {
+        console.log('WhatsApp gateway offline or unreachable:', err);
+      }
+
+      // إشعار فوري على الشاشة في حال لم يكن خادم واتساب مشغلاً بعد
+      Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'info',
+        title: 'رمز التحقق السريع (OTP): ' + otp,
+        showConfirmButton: false,
+        timer: 4000
+      });
+    }
+
+    async function checkWhatsAppServerStatus() {
+      const waUrl = localStorage.getItem(STORAGE_KEY_WA_URL) || DEFAULT_WA_URL;
+      const baseUrl = waUrl.replace('/send-otp', '/status');
+      const ind = document.getElementById('wa-server-indicator');
+      if (!ind) return;
+      try {
+        const res = await fetch(baseUrl);
+        const data = await res.json();
+        if (data.connected) {
+          ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+          ind.innerHTML = '<i class="fa-solid fa-circle-check"></i> متصل: +' + data.phone;
+        } else {
+          ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30';
+          ind.innerHTML = '<i class="fa-solid fa-qrcode"></i> بانتظار مسح QR';
+        }
+      } catch (e) {
+        ind.className = 'text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400';
+        ind.innerHTML = 'غير مشغل محلياً';
+      }
+    }
+
+    async function testWhatsAppMessage() {
+      const testPhone = prompt('أدخل رقم هاتفك لتجربة استلام رسالة واتساب (مثال: 07801234567):');
+      if (!testPhone) return;
+      const waUrl = (document.getElementById('setting-wa-url').value || '').trim() || DEFAULT_WA_URL;
+      const testOtp = Math.floor(1000 + Math.random() * 9000).toString();
+
+      Swal.fire({ title: 'جاري الإرسال...', didOpen: () => Swal.showLoading() });
+
+      try {
+        const cleanPhone = testPhone.replace(/[\s\-\+\(\)]/g, '');
+        const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
+
+        const res = await fetch(waUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            phone: formatted,
+            otp: testOtp,
+            message: `*رسالة اختبارية من خادم WhatsApp Phone API*\n\nتم إرسال كود التجربة بنجاح: *${testOtp}*`
+          })
+        });
+        const data = await res.json();
+        if (data.success) {
+          Swal.fire({
+            icon: 'success',
+            title: 'تم إرسال الرسالة بنجاح!',
+            text: `وصلت الرسالة من رقم هاتفك إلى الرقم: +${formatted}`
+          });
+        } else {
+          Swal.fire({
+            icon: 'warning',
+            title: 'تنبيه من الخادم',
+            text: data.error || 'تأكد من مسح رمز الـ QR على http://localhost:3000'
+          });
+        }
+      } catch (err) {
+        Swal.fire({
+          icon: 'error',
+          title: 'تعذر الاتصال بخادم WhatsApp API',
+          text: 'تأكد من تشغيل start.bat أو خادم node server.js على حاسوبك أولاً.'
+        });
+      }
+    }
+
     function saveGasSettings() {
       const url = (document.getElementById('setting-gas-url').value || '').trim();
       localStorage.setItem(STORAGE_KEY_GAS_URL, url);
+      const waUrl = (document.getElementById('setting-wa-url').value || '').trim();
+      localStorage.setItem('sobriety_whatsapp_api_url', waUrl || DEFAULT_WA_URL);
       closeSettingsModal();
       Swal.fire({
         icon: 'success',

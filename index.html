@@ -1019,6 +1019,7 @@
 
     function loadInitialData() {
       localStorage.setItem(STORAGE_KEY_GAS_URL, DEFAULT_GAS_URL);
+      localStorage.setItem(STORAGE_KEY_WA_URL, DEFAULT_WA_URL);
       // تدريسيين افتراضيين لتسهيل الفحص الفوري
       let faculties = getStoredFaculties();
       if (faculties.length === 0) {
@@ -1986,20 +1987,21 @@
     const WA_API_KEY = 'kufa-otp-secret-key-2026';
 
     async function sendWhatsAppOtp(phone, otp) {
-      const waUrl = localStorage.getItem(STORAGE_KEY_WA_URL) || DEFAULT_WA_URL;
       const cleanPhone = phone.replace(/[\s\-\+\(\)]/g, '');
       const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
+      const message = `*جامعة الكوفة — كلية التخطيط العمراني*\n*منظومة فحص رصانة البحوث العلمية*\n\nرمز التحقق الخاص بك (OTP) هو: *${otp}*\n\nصلاحية الرمز 5 دقائق. يرجى عدم مشاركته مع أي شخص.`;
 
       try {
-        const res = await fetch(waUrl, {
+        const res = await fetch(DEFAULT_WA_URL, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': WA_API_KEY
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({
             phone: formatted,
-            otp: otp
+            otp: otp,
+            apiKey: WA_API_KEY,
+            message: message
           })
         });
         const data = await res.json();
@@ -2041,8 +2043,7 @@
     }
 
     async function checkWhatsAppServerStatus() {
-      const waUrl = localStorage.getItem(STORAGE_KEY_WA_URL) || DEFAULT_WA_URL;
-      const baseUrl = waUrl.replace('/send-otp', '/status');
+      const baseUrl = 'https://otp.physplan.com/status';
       const ind = document.getElementById('wa-server-indicator');
       if (!ind) return;
       try {
@@ -2064,7 +2065,6 @@
     async function testWhatsAppMessage() {
       const testPhone = prompt('أدخل رقم هاتفك لتجربة استلام رسالة واتساب (مثال: 07801234567):');
       if (!testPhone) return;
-      const waUrl = (document.getElementById('setting-wa-url').value || '').trim() || DEFAULT_WA_URL;
       const testOtp = Math.floor(1000 + Math.random() * 9000).toString();
 
       Swal.fire({ title: 'جاري الإرسال...', didOpen: () => Swal.showLoading() });
@@ -2073,15 +2073,16 @@
         const cleanPhone = testPhone.replace(/[\s\-\+\(\)]/g, '');
         const formatted = cleanPhone.startsWith('0') ? '964' + cleanPhone.substring(1) : (cleanPhone.startsWith('964') ? cleanPhone : '964' + cleanPhone);
 
-        const res = await fetch(waUrl, {
+        const res = await fetch(DEFAULT_WA_URL, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': WA_API_KEY
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({
             phone: formatted,
-            otp: testOtp
+            otp: testOtp,
+            apiKey: WA_API_KEY,
+            message: `*رسالة اختبارية من خادم WhatsApp Phone API*\n\nتم إرسال كود التجربة بنجاح: *${testOtp}*`
           })
         });
         const data = await res.json();
